@@ -6,8 +6,7 @@ class Solution {
         if(length % 2 == 0) {
             answer = s.substring(length/2-1, length/2+1);
         } else {
-            int half = (int)Math.floor(length/2);
-            answer = s.substring(half, half+1);
+            answer = s.substring(length/2, length/2+1);
         }
             
             

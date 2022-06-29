@@ -15,8 +15,7 @@ class Solution {
         }
         
         // 최대 점수 구하기
-        int max = score[0];
-        for(int i=1; i<score.length; i++) if(max < score[i]) max = score[i];
+        int max = Math.max(score[0], Math.max(score[1], score[2]));
         
         // 최대 점수를 가진 수포자 리스트 생성
         List<Integer> answ = new ArrayList<Integer>();

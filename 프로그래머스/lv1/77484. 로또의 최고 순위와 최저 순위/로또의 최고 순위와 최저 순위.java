@@ -15,7 +15,7 @@ class Solution {
             }
         }
         
-        answer[0] = (cnt == 0 && zero == 0) ? 6 : 7 - (zero + cnt);
+        answer[0] = (cnt + zero == 0) ? 6 : 7 - (zero + cnt);
         answer[1] = (cnt == 0) ? 6 : 7 - cnt;
         
         return answer;

@@ -26,7 +26,5 @@ def solution(lottos, win_nums):
             
     rank(answer, cnt+zero)        
     rank(answer, cnt)
-        
-                
-    
+
     return answer

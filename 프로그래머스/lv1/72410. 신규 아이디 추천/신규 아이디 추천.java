@@ -1,16 +1,10 @@
 class Solution {
     public String solution(String new_id) {
-        // 1단계
-        new_id = new_id.toLowerCase();
         
-        // 2단계
-        new_id = new_id.replaceAll("[^a-z0-9-_.]", "");
-        
-        // 3단계
-        new_id = new_id.replaceAll("[.]{2,}", ".");
-        
-        // 4단계
-        new_id = new_id.replaceAll("^[.]|[.]$", "");
+        new_id = new_id.toLowerCase() // 1단계
+                .replaceAll("[^a-z0-9-_.]", "") // 2단계
+                .replaceAll("[.]{2,}", ".") // 3단계
+                .replaceAll("^[.]|[.]$", ""); // 4단계
         
         // 5단계
         if(new_id.equals("")) new_id = "a";
@@ -23,8 +17,6 @@ class Solution {
             char last = new_id.charAt(new_id.length()-1);
             while(new_id.length() != 3) new_id += last;
         }
-        
-        System.out.println(new_id);
         
         return new_id;
     }

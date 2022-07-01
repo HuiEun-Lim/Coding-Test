@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public int solution(String dartResult) {
         int answer = 0;
@@ -40,8 +38,7 @@ class Solution {
         for(int s : score) {
             answer += s;
         }
-        
-        
+                
         return answer;
     }
 }
